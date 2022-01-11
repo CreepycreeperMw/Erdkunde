@@ -1,0 +1,545 @@
+/*Standart Stuff*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+}
+
+/*Permant Animationes*/
+.on {
+    opacity: 1;
+}
+.off {
+    opacity: 0;
+}
+g#schornstein {
+    animation: schst 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes schst {
+    from {
+        transform: scaleX(1) scaleY(1);
+    }
+    to {
+        transform: scaleX(1.20) scaleY(0.75);
+    }
+}
+
+/*One Time Animation*/ 
+
+
+
+g#sonnen_system {
+    transition: 1s ease;
+    /*animation: trans_1 1s   ease;
+    position: relative;
+    left: 50%;
+    top: 50%;*/
+
+}
+
+/*g#sonnen_system.transition_1 {
+    transform: translate(100%);
+}*/
+
+g#sonnen_system.transition_1 path#path1129 {
+    transform: translateX(20%) scale(1.45) translateY(2%);
+    transform-origin: center;
+    transition: 2s ease;
+}
+
+g#sonnen_system.transition_1 g#text47651 {
+    transform: scale(0);
+    transition: 1s ease;
+    transform-origin: 70% 30%;
+}
+@keyframes trans_1 {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(100%);
+    }
+}
+
+g#sonne {
+    opacity: 0;
+    transition: 1s ease;
+    transform-origin: center center;
+}
+
+g#sonnesystem2sonneatom g#sonne.transition_1 {
+    opacity: 1;
+}
+
+g#sonne g#He_main {
+    opacity: 0;
+    transition: 1s ease;
+}
+
+g#sonne g#He_main.conversion {
+    opacity: 1;
+}
+
+g#sonne g#H_main {
+    transform: translate(0%, 0%);
+    transition: 1s ease;
+    opacity: 1;
+}
+
+g#sonne g#H_main.conversion {
+    transform: translate(-7%, -5%);
+}
+
+g#sonne g#H_main.flup {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+g#sonne g#H_2nd {
+    transform: translate(0%, 0%);
+    transition: 1s ease;
+    opacity: 1;
+}
+
+g#sonne g#H_2nd.flup {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+g#sonne g#H_2nd.conversion {
+    transform: translate(7%, 5%);
+}
+
+
+g#co2.transition_1 {
+    animation: co2toright 1s ease-in-out;
+}
+
+g#arrows {
+    opacity: 0;
+}
+
+g#arrows.conversion {
+    animation: arrow_blink 3s ease-in-out infinite;
+}
+
+g#sonnesystem2sonneatom {
+    transform-origin: bottom;
+}
+
+g#sonnesystem2sonneatom.transition_2 {
+    animation: sonnesystem2_transition 1.25s ease-in-out;
+}
+
+@keyframes sonnesystem2_transition {
+    0%{
+        transform: rotate(0deg) scale(100%);
+    }
+    40%{
+        transform: rotate(40deg) scale(170%);
+    }
+    100%{
+        transform: rotate(-180deg) scale(200%);
+    }
+}
+
+@keyframes arrow_blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+ @keyframes co2toright {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(100%, 0%);
+    }
+}
+
+/*
+SONNE SECTION DONE!
+
+
+
+
+NOW ENTERING STORYBOARD
+*/
+
+
+g#showcase_solarpanel {
+    transition: 1.5s ease-in-out;
+}
+g#solar_thermie {
+    transition: 1.5s ease-in-out;
+}
+
+g#showcase_solarpanel.transition_1 {
+    transform: translateX(-100%) matrix(5.1402706,0,0,5.1402706,307.38972,-85.847512);
+}
+
+
+g#solar_thermie.transition_1 {
+    transform: translateX(-125%) matrix(0.49612095,0,0,0.49612095,1024.0021,87.813085);
+}
+
+/*
+Vergleich
+*/
+
+#szene {
+    transition: 1s ease;
+}
+
+g#sun {
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+}
+
+g#sun.scale0 {
+    transform: scale(0);
+    transition: 0s;
+}
+
+g#co2.transition_1 {
+    transition: 1s ease-in-out;
+    transform: translateX(200%);
+}
+
+g#vegetation.transition_1 {
+    transition: 0s;
+    transform: translateY(100%);
+}
+
+g#vegetation {
+    transition: 1s;
+    transform: translateY(0%);
+}
+
+g#tops.off {
+    transition: 0s;
+    opacity: 0;
+}
+
+g#tops {
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+g#szene_solar_panel {
+    transform: translateX(-26%);
+}
+
+g#szene_solar_panel.transition_1 {
+    transition: 1s ease-in-out;
+    transform: translateX(0%);
+}
+g#vorteile {
+    transition: 1s ease;
+}
+g#vorteile.state1 .lichtaus {
+    opacity: 0;
+    transition: 0s;
+}
+g#vorteile.state1 g#vor_baum1 {
+    opacity: 0;
+    transition: 0s ease;
+}
+g#vor_baum1 {
+    transition: 1s ease;
+}
+g#vorteile.state1 g#vor_baum2 {
+    opacity: 0;
+    transition: 0s;
+}
+g#vor_baum2 {
+    transition: 1s ease;
+}
+g#vorteile.state1 g#vor_solarpanel {
+    transform: translateY(-300%);
+    transition: 0s;
+}
+g#vor_solarpanel {
+    transition: 2s ease;
+}
+g#vorteile.state1 #solarzaun3 {
+    transform: translateY(-300%);
+    transition: 0s;
+}
+#solarzaun3 {
+    transition: 2s ease;
+}
+g#vorteile.state1 #vor_solarzaun4 {
+    transform: translateY(-300%);
+    transition: 0s;
+}
+#vor_solarzaun4 {
+    transition: 2s ease;
+}
+g#vorteile.state1 #vor_solarzaun2 {
+    transform: translateY(-300%);
+    transition: 0s;
+}
+#vor_solarzaun2 {
+    transition: 2s ease;
+}
+g#vorteile.state1 #vor_solarzaun1 {
+    transform: translateY(-300%);
+    transition: 0s;
+}
+#vor_solarzaun1 {
+    transition: 2s ease;
+}
+g#vorteile.state1 g#vor_garten {
+    opacity: 0;
+    transition: 1s ease;
+}
+g#vor_garten {
+    transition: 1s ease;
+}
+g#vorteile.state1 #vor_kuh1 {
+    transform: translateX(-50%);
+    transition: 0s;
+}
+#vor_kuh1 {
+    transition: 1s ease;
+}
+#vor_kuh2 {
+    transition: 1s ease;
+}
+#vor_kuh3 {
+    transition: 1s ease;
+}
+g#vorteile.state1 #vor_kuh2 {
+    transform: translateX(-65%) translateY(10%);
+    transition: 0s;
+}
+g#vorteile.state1 #vor_kuh3 {
+    transform: translateX(-40%) translateY(10%);
+    transition: 0s;
+}
+g#vorteile.state1 #lichtaus_text {
+    transform: scale(0);
+}
+#lichtaus_text {
+    transition: 1s ease;
+}
+g#vorteile.state2 #lichtaus_text {
+    transform: scale(0) matrix(2.1394567,0,0,2.1394567,-816.13326,27.894121);
+    transition: 1s ease;
+}
+g#vorteile.state3 #lichtaus_text {
+    transform: scale(1) matrix(2.1394567,0,0,2.1394567,-816.13326,27.894121);
+    transition: 1s ease;
+}
+g#vorteile.state1 #rect9839 {
+    transform: scale(0);
+    transition: 1s ease;
+}
+g#vorteile.state2 #rect9839 {
+    transform: scale(0);
+    transition: 1s ease;
+}
+g#vorteile.state3 #rect9839 {
+    transform: scale(1) rotate(25.940475);
+    transition: 1s ease;
+    
+}
+
+g#vorteile.state2 .lichtaus {
+    transition: 1s ease;
+    opacity: 0;
+}
+g#vorteile.state2 #vor_fabrik {
+    transition: 1s ease;
+    opacity: 0;
+}
+g#vorteile.state3 #vor_fabrik {
+    transition: 1s ease;
+    opacity: 0;
+}
+g#vorteile.state3 .lichtaus {
+    transition: 1s ease;
+    opacity: 1;
+}
+g#vorteile.state3 g#sun_vor {
+    transition: 1s ease;
+    opacity: 0;
+}
+
+
+
+/*Solarzelle Animation*/
+#armstueck {
+    opacity: 0;
+    transition: 0.5;
+}
+#armstueck.on {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+#phosphorside {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#phosphorside.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#phosphoratom {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#phosphoratom.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#movingatom {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#movingatom.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#movingatom.move {
+    transform: translateX(-0.4%) translateY(25%);
+    transition: 1s ease-in-out;
+}
+
+#borside {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#borside.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#boratom {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#boratom.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+
+#grenzschicht {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#grenzschicht.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#bor4 {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#bor4.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+
+
+#pluspole {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#pluspole.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#minuspole {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#minuspole.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#metal {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#metal.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#lamp {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#lamp.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+#silicium_text {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#silicium_text.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.solar_therm_arrow {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.solar_therm_arrow1 {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.solartherm_arrow.on {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+#solar_thermie_tower {
+    transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
